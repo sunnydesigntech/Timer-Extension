@@ -55,5 +55,5 @@ To use this extension in your micro:bit project:
 - Add the extension to your project and use the timer blocks from the timer namespace.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/sunnydesigntech/Timer-Extension/blob/main/LICENSE) file for details.
 
