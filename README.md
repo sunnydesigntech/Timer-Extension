@@ -57,3 +57,7 @@ To use this extension in your micro:bit project:
 ## License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/sunnydesigntech/Timer-Extension/blob/main/LICENSE) file for details.
 
+## Hardware
+
+This extension does not require any additional hardware or accessories. It is a software-based timer extension designed to work with the [BBC micro:bit](https://microbit.org/) platform.
+
