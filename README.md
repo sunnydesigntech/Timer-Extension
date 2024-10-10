@@ -43,7 +43,7 @@ To use this extension in your micro:bit project:
 
 - Open the MakeCode Editor.
 - Click on the Extensions under the gearwheel menu.
-- Paste this GitHub repository URL: [Timer Extension](https://github.com/sunnydesigntech/Timer-Extension) in the search box.
+- Paste this GitHub repository URL: https://github.com/sunnydesigntech/Timer-Extension in the search box.
 - Add the extension to your project and use the timer blocks from the timer namespace.
 
 ## License
