@@ -21,20 +21,28 @@ The **micro:bit Timer Extension** allows users to easily add timer functionality
 Here’s a simple example of how to use the timer in a micro:bit project:
 
 ```javascript
-// Start the timer when button A is pressed
-input.onButtonPressed(Button.A, function () {
-    timer.startTimer()
-})
+let running = true
 
-// Stop the timer when button B is pressed
-input.onButtonPressed(Button.B, function () {
-    timer.stopTimer()
-})
+// Start the timer
+timer.startTimer()
 
-// Display the elapsed time on the LED screen in milliseconds
+// Main loop to check elapsed time and stop the code after 3 seconds
 basic.forever(function () {
-    basic.showNumber(timer.getElapsedTime())
+    // Check if the timer has reached 3 seconds (3000 milliseconds) and the code is still running
+    if (running && timer.getElapsedTime() >= 3000) {
+        // Stop the code execution
+        running = false
+        basic.clearScreen()
+        basic.showString("STOP")  // Display "STOP" when the timer reaches 3 seconds
+    } else if (running) {
+        // Code to execute before the 3-second timer ends
+        basic.showIcon(IconNames.Heart)  // Show a heart icon
+        basic.pause(1000)                // Wait for 1 second
+        basic.showIcon(IconNames.SmallHeart)  // Show a small heart icon
+        basic.pause(1000)                // Wait for 1 second
+    }
 })
+
 ```
 
 ## Example Usage
