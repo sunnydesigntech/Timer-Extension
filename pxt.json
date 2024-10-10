@@ -1,0 +1,17 @@
+{
+  "name": "timer",
+  "version": "0.0.1",
+  "description": "A micro:bit extension that provides easy-to-use timer functionality, including start, stop, reset, and elapsed time.",
+  "dependencies": {
+    "core": "*"
+  },
+  "files": [
+    "main.ts",
+    "README.md"
+  ],
+  "public": true,
+  "supportedTargets": [
+    "microbit"
+  ],
+  "license": "MIT"
+}
